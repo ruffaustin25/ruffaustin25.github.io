@@ -1,0 +1,29 @@
+# Denote all files that are truly binary and should not be modified.
+*.7z   binary filter=lfs diff=lfs merge=lfs
+*.avi  binary filter=lfs diff=lfs merge=lfs
+*.bz   binary filter=lfs diff=lfs merge=lfs
+*.eot  binary
+*.flv  binary filter=lfs diff=lfs merge=lfs
+*.gif  binary
+*.gz   binary filter=lfs diff=lfs merge=lfs
+*.jpg  binary
+*.m4a  binary filter=lfs diff=lfs merge=lfs
+*.m4v  binary filter=lfs diff=lfs merge=lfs
+*.mov  binary filter=lfs diff=lfs merge=lfs
+*.mp3  binary filter=lfs diff=lfs merge=lfs
+*.mp4  binary filter=lfs diff=lfs merge=lfs
+*.ogg  binary filter=lfs diff=lfs merge=lfs
+*.ogv  binary filter=lfs diff=lfs merge=lfs
+*.pdf  binary filter=lfs diff=lfs merge=lfs
+*.png  binary
+*.rar  binary filter=lfs diff=lfs merge=lfs
+*.swf  binary
+*.tar  binary filter=lfs diff=lfs merge=lfs
+*.tgz  binary filter=lfs diff=lfs merge=lfs
+*.ttf  binary
+*.wav  binary filter=lfs diff=lfs merge=lfs
+*.webm binary filter=lfs diff=lfs merge=lfs
+*.wmv  binary filter=lfs diff=lfs merge=lfs
+*.woff binary
+*.xz   binary filter=lfs diff=lfs merge=lfs
+*.zip  binary filter=lfs diff=lfs merge=lfs
