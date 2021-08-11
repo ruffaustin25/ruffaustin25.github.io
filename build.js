@@ -4,7 +4,8 @@ const Handlebars = require('handlebars');
 const indexTemplateFile = fs.readFileSync(__dirname + '/templates/index.hbs');
 var indexTemplate = Handlebars.compile(indexTemplateFile.toString());
 
-var partialsFilenames = fs.readdirSync(__dirname + '/partials');
+const partialsDir = __dirname + '/partials';
+var partialsFilenames = fs.readdirSync(partialsDir);
 
 partialsFilenames.forEach(function (filename) {
   var matches = /^([^.]+).hbs$/.exec(filename);

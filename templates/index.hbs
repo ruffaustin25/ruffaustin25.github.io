@@ -4,8 +4,54 @@
         <title>Austin Ruff's Portfolio</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+        <link rel="stylesheet" href="static/css/app.css">
     </head>
     <body>
-        Hello world
+        <div class="pure-menu pure-menu-horizontal nav-bar">
+            <a href="#" class="pure-menu-heading pure-menu-link nav-item">Austin Ruff</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="#work" class="pure-menu-link nav-item">Professional Work</a>
+                </li>
+                {{!-- <li class="pure-menu-item">
+                    <a href="#contact" class="pure-menu-link nav-item">Contact</a>
+                </li> --}}
+                <li class="pure-menu-item">
+                    <a href="static/AustinRuffResume.pdf" class="pure-menu-link nav-item" download>Resume</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="pure-g centered">
+            <div class="pure-u-22-24 pure-u-lg-2-3">
+                <h1><a name="about">About Me</a></h1>
+                <p>
+                    Hi!  I'm Austin Ruff, a game programmer with over 4 years of experience working in video games.  
+                    I am most at home when I get to challenge myself to learn new things.
+                </p>
+
+                <h1><a name="work">Professional Work</a></h1>
+                <div class="pure-g">
+                    {{#>cardItem image="static/img/bfLogo.png" subtitle="Unannounced Project"}}
+                        This is a project I worked on
+                    {{/cardItem}}
+                    {{#>cardItem image="static/img/nslt.jpg" subtitle="New Super Lucky's Tale (2019)"}}
+                        This is a project I worked on
+                    {{/cardItem}}
+                    {{#>cardItem image="static/img/hemut.jpg" subtitle="Arté: Hemut (2018)"}}
+                        https://triseum.com/arte-hemut/
+                        This is a project I worked on
+                    {{/cardItem}}
+                    {{#>cardItem image="static/img/lumiere.jpg" subtitle="Arté: Lumiere (2018)"}}
+                        https://triseum.com/arte-lumiere/
+                        This is a project I worked on
+                    {{/cardItem}}
+                </div>
+
+                {{!-- <h1><a name="contact">Contact</a></h1>
+                <p></p> --}}
+            </div>
+        </div>
     </body>
 </html>

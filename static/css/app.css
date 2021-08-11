@@ -1,0 +1,32 @@
+.nav-bar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #1b6e44;
+}
+
+.nav-item
+{
+    color: #FFF;
+}
+
+.centered
+{
+    justify-content: center;
+}
+
+.card
+{
+    margin: 1%;
+    height: 98%;
+    background-color: #EEE;
+}
+
+.card img
+{
+    margin: 1%;
+    width: 98%;
+}
