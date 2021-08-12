@@ -1,16 +1,16 @@
-.nav-bar
+.page-content
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    background-color: #1b6e44;
+    margin-top: 1em;
 }
 
 .nav-item
 {
     color: #FFF;
+}
+
+.nav-item:hover
+{
+    background-color: #145233;
 }
 
 .centered
@@ -22,7 +22,7 @@
 {
     margin: 1%;
     height: 98%;
-    background-color: #EEE;
+    background-color: rgb(255, 255, 255);
 }
 
 .card img
@@ -30,3 +30,88 @@
     margin: 1%;
     width: 98%;
 }
+
+.card div
+{
+    margin: 2%;
+    width: 96%;
+}
+
+/* Pure.css responsive header, from https://purecss.io/layouts/tucked-menu-vertical/ */
+.custom-wrapper {
+    background-color: #1b6e44;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+    height: 7em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
+/* End "Pure.css responsive header..." */
