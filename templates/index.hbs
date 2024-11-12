@@ -48,37 +48,90 @@
 
                 <h1><a name="work">Professional Work</a></h1>
                 <div class="pure-g">
-                    {{#>cardItem image="static/img/bfLogo.png" subtitle="Unannounced Project" link="https://bossfightentertainment.com/"}}
+                    {{#>cardItem image="static/img/aquifer.jpg" subtitle="Aquifer (2022-)" link="https://www.aquifermotion.com/"}}
                         <ul>
-                            <li>Worked in a client-server architecture while ensuring sim data is the same on both</li>
-                            <li>Implemented new features using an existing tech stack, and working with server engineers</li>
-                            <li>Gameplay and tools programming, including a tool for automatically documenting a custom component system, and a tool for debugging that system</li>
+                            <li>Live service 3D animation software product from Aquifer Inventions</li>
+                            <li>Created an masked screen space outline system</li>
+                            <li>Worked on a server side system for fulfilling orders that allowed for creating app readable files from form inputs</li>
+                            <li>"Forked" <a href="https://github.com/Unity-Technologies/com.unity.demoteam.hair">Unity Demoteam Hair</a> and <a href="https://github.com/Unity-Technologies/com.unity.demoteam.digital-human">Demoteam Digital Human</a> packages to our internal bitbucket
+                                <ul>
+                                    <li>Created a URP hair shader that works with the Demoteam hair package</li>
+                                    <li>Added an approximate transmission/rimlight effect to the hair shader that works with URP without path tracing</li>
+                                    <li>Option to remove unnecessary physics for performance reasons</li>
+                                    <li>Added build-time and realtime alpha sorting to the Demoteam Hair package</li>
+                                </ul>
+                            </li>
+                            <li>Created a pose-based procedural animation system with blending, overshoot, step adjustment, and IK-based hand position adjustment</li>
                         </ul>
                     {{/cardItem}}
-                    {{#>cardItem image="static/img/nslt.jpg" subtitle="New Super Lucky's Tale (2019)" link="https://playfulstudios.com/new-super-luckys-tale/"}}
+                    {{#>cardItem image="static/img/kingdom.jpg" subtitle="Kingdom Boss (2021)" link="https://x.com/kingdombossgame?lang=en"}}
+                        <ul>
+                            <li>Soft-launched in 2021 by Bossfight Entertainment</li>
+                            <li>Worked in a client-server architecture while ensuring sim data is the same on both</li>
+                            <li>Worked on an component-based ability system
+                                <ul>
+                                    <li>Editor tool for automatically documenting components</li>
+                                    <li>Editor tool for adding breakpoints during ability evaluation</li>
+                                    <li>Editor tool for viewing and editing character stats at runtime</li>
+                                    <li>Editor tool for adding, viewing, and deleting components</li>
+                                    <li>Supported design team by adding more gameplay specific features and components to the system</li>
+                                </ul>
+                            </li>
+                            <li>Worked on in-house scripting language features
+                                <ul>
+                                    <li>Added capability for reusable code via macros</li>
+                                    <li>Added capability for changing large amounts of character stats via a compile time constant system, including error reporting on non-constant values</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    {{/cardItem}}
+                    {{#>cardItem image="static/img/bingo.jpg" subtitle="Other Work At Bossfight (2020-2021)" link="https://www.playstudios.com/myvegas-bingo/"}}
+                        <ul>
+                            <li>Added scripting language features to MyVEGAS Bingo from Kingdom Boss</li>
+                            <li>Worked on an unanounced project converting DirectX rendering code and shaders to Vulkan</li>
+                            <li>Worked on an unanounced project in Unity</li>
+                        </ul>
+                    {{/cardItem}}
+                    {{#>cardItem image="static/img/lucky.jpg" subtitle="New Super Lucky's Tale (2019)" link="https://playfulstudios.com/new-super-luckys-tale/"}}
                         <ul>
                             <li>Worked in C++ on a Unity native plugin for platform specific functionality on Nintendo Switch</li>
                             <li>Implemented features and made fixes to ensure that the game would pass Nintendo's guidelines</li>
                             <li>Made optimizations for the game (orginally released on the Xbox One) to bring it up to 30 fps and under 3.2 GB memory usage</li>
-                            <li>Created a tool to convert all world space popup style speech bubbles into a new screen space dialogue system, saving weeks to months of time as opposed reimplementing</li>
+                            <li>Created a tool to convert all world space speech bubbles into a new screen space dialogue system, avoiding weeks of data re-entry</li>
                         </ul>
                     {{/cardItem}}
                     {{#>cardItem image="static/img/hemut.jpg" subtitle="Arté: Hemut (2018)" link="https://triseum.com/arte-hemut/"}}
                         <ul>
-                            <li>Upgraded dialogue system from "Arté: Lumiere", introducing a more compact serialization system, and more generic "Dialogue Delegate" and "Dialogue Conditional" system</li>
-                            <li>Created the logic for the overworld of the game scenarios where the player would collect an inventory of cards to use at the end of the scenario</li>
+                            <li>Optimized serialized size and modified dialogue system from "Arté: Lumiere"</li>
+                            <li>Added a global blackboard system that could be manipulated and read by the dialogue system for branching options</li>
+                            <li>Worked on the "overworld" of the game where the player could collect an inventory of cards</li>
                         </ul>
                     {{/cardItem}}
                     {{#>cardItem image="static/img/lumiere.jpg" subtitle="Arté: Lumiere (2018)" link="https://triseum.com/arte-lumiere/"}}
                         <ul>
-                            <li>Created a node-based graphical dialogue editor that allowed for rapid implementation of dialogue trees</li>
-                            <li>Worked with other engineers and designers on creating a card-based minigame, and a grid-based puzzle minigame</li>
+                            <li>Created a node-based graphical dialogue editor that allowed for rapid implementation of dialogue trees
+                                <ul>
+                                    <li>Used reflection to populate fields in the Editor and to serialize the tree structure</li>
+                                    <li>Adjacency list to store the tree</li>
+                                    <li>Supported triggering actions from dialogue nodes</li>
+                                </ul>
+                            </li>
+                            <li>Worked on a card-base minigame
+                                <ul>
+                                    <li>Rendering of flippable cards</li>
+                                    <li>Scoring of cards</li>
+                                    <li>Card snapping to zones</li>
+                                </ul>
+                            </li>
+                            <li>Worked on a grid-based puzzle minigame
+                                <ul>
+                                    <li>Editor tool for quickly editing a grid of prefabs</li>
+                                    <li>Implementation of A* pathfinding</li>
+                                </ul>
+                            </li>
                         </ul>
                     {{/cardItem}}
                 </div>
-
-                {{!-- <h1><a name="contact">Contact</a></h1>
-                <p></p> --}}
             </div>
         </div>
     </body>
