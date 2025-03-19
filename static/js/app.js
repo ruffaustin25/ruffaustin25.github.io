@@ -1,49 +1,92 @@
-// Responsive menu, modified from https://purecss.io/layouts/tucked-menu-vertical/
-function toggleHorizontal() {
-    menu.classList.remove('closing');
-    [].forEach.call(
-        document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-        function(el){
-            el.classList.toggle('pure-menu-horizontal');
-        }
-    );
-};
-
-function toggleMenu() {
-    // set timeout so that the panel has a chance to roll up
-    // before the menu switches states
-    if (menu.classList.contains('open')) {
-        menu.classList.add('closing');
-        rollBack = setTimeout(toggleHorizontal, 500);
-    }
-    else {
-        if (menu.classList.contains('closing')) {
-            clearTimeout(rollBack);
-        } else {
-            toggleHorizontal();
-        }
-    }
-    menu.classList.toggle('open');
-    document.getElementById('toggle').classList.toggle('x');
-};
-
-function closeMenu() {
-    if (menu.classList.contains('open')) {
-        toggleMenu();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', (event) =>
+// Global site script
+// On page load
+$(function()
 {
-    var menu = document.getElementById('menu'),
-        rollback,
-        WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
-
-    document.getElementById('toggle').addEventListener('click', function (e) {
-        toggleMenu();
-        e.preventDefault();
-    });
-
-    window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+    console.log("TESTSETESTSET");
 });
-// End "Responsive menu..."
+
+// Project page ajax loads
+$(function()
+{
+    $('#aquifer').on("click", function(){
+        console.log('Tried to load: Aquifer');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: { },
+            success: function(data){
+                $('#maincont').html(data);
+            }
+        });
+    });
+});
+$(function()
+{
+    $('#kingdomBoss').on("click", function(){
+        console.log('Tried to load: Kingdom Boss');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: { },
+            success: function(data){
+                $('#maincont').html(data);
+            }
+        });
+    });
+});
+$(function()
+{
+    $('#otherBossfight').on("click", function(){
+        console.log('Tried to load: Other Work At Bossfight');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: { },
+            success: function(data){
+                $('#maincont').html(data);
+            }
+        });
+    });
+});
+$(function()
+{
+    $('#lucky').on("click", function(){
+        console.log('Tried to load: Lucky&#x27;s Tale');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: { },
+            success: function(data){
+                $('#maincont').html(data);
+            }
+        });
+    });
+});
+$(function()
+{
+    $('#hemut').on("click", function(){
+        console.log('Tried to load: Arté: Hemut');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: { },
+            success: function(data){
+                $('#maincont').html(data);
+            }
+        });
+    });
+});
+$(function()
+{
+    $('#lumiere').on("click", function(){
+        console.log('Tried to load: Arté: Lumiere');
+        $.ajax({
+            type: "GET",
+            url: "",
+            data: { },
+            success: function(data){
+                $('#maincont').html(data);
+            }
+        });
+    });
+});

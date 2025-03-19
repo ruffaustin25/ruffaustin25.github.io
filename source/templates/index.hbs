@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Austin Ruff's Portfolio</title>
+        <meta charset="UTF-8">
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/app.js"></script> 
+        <link rel="stylesheet" href="static/css/app.css">
+    </head>
+    <body>
+{{#each projectPages}}
+        <div id="{{{this.id}}}" class="templink">
+            {{{this.name}}}
+        </div>
+{{/each}}
+        <div id="mainScroller">
+{{#each projectPages}}
+        {{{this.outputHtml}}}
+{{/each}}
+        </div>
+    </body>
+</html>

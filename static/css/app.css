@@ -1,117 +1,36 @@
-.page-content
-{
-    margin-top: 1em;
+body, html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.nav-item
-{
-    color: #FFF;
+body {
+  margin: 0;
 }
 
-.nav-item:hover
-{
-    background-color: #145233;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.centered
-{
-    justify-content: center;
+.projectBgGradient {
+  content: "";
+  overflow: auto;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
 }
 
-.card
-{
-    margin: 1%;
-    height: 98%;
-    background-color: rgb(255, 255, 255);
+.projectImage {
+  height: 100%;
+  width: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  z-index: -1;
 }
 
-.card img
-{
-    margin: 1%;
-    width: 98%;
+.templink {
+  cursor: pointer;
 }
-
-.card div
-{
-    margin: 2%;
-    width: 96%;
-}
-
-/* Pure.css responsive header, from https://purecss.io/layouts/tucked-menu-vertical/ */
-.custom-wrapper {
-    background-color: #1b6e44;
-    margin-bottom: 1em;
-    -webkit-font-smoothing: antialiased;
-    height: 2.1em;
-    overflow: hidden;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
-    transition: height 0.5s;
-}
-
-.custom-wrapper.open {
-    height: 7em;
-}
-
-.custom-menu-3 {
-    text-align: right;
-}
-
-.custom-toggle {
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-}
-
-.custom-toggle .bar {
-    background-color: #777;
-    display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 100px;
-    position: absolute;
-    top: 18px;
-    right: 7px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.custom-toggle .bar:first-child {
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
-}
-
-.custom-toggle.x .bar {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.custom-toggle.x .bar:first-child {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-@media (max-width: 768px) {
-
-    .custom-menu-3 {
-        text-align: left;
-    }
-
-    .custom-toggle {
-        display: block;
-    }
-
-}
-/* End "Pure.css responsive header..." */

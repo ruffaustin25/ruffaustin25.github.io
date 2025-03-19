@@ -3,179 +3,106 @@
     <head>
         <title>Austin Ruff's Portfolio</title>
         <meta charset="UTF-8">
+        <script src="static/js/jquery.min.js"></script>
         <script src="static/js/app.js"></script> 
-        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
         <link rel="stylesheet" href="static/css/app.css">
     </head>
     <body>
-        <div class="custom-wrapper pure-g" id="menu">
-            <div class="pure-u-1 pure-u-md-1-6 pure-u-lg-1-8 pure-u-xl-1-12">
-                <div class="pure-menu">
-                    <a href="#" class="pure-menu-heading nav-item">Austin Ruff</a>
-                    <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-                </div>
-            </div>
-            <div class="pure-u-1 pure-u-md-1-3">
-                <div class="pure-menu pure-menu-horizontal custom-can-transform">
-                    <ul class="pure-menu-list">
-                        <li class="pure-menu-item"><a href="#work" class="pure-menu-link nav-item">Professional Work</a></li>
-                        <li class="pure-menu-item"><a href="static/AustinRuffResume.pdf" class="pure-menu-link nav-item">Resume</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id="aquifer" class="templink">
+            Aquifer
         </div>
-      </div>
-        
-        <div class="pure-g centered page-content">
-            <div class="pure-u-22-24 pure-u-lg-2-3">
-                <h1><a name="about">About Me</a></h1>
-                <p>
-                    Hi!  I'm Austin Ruff, a game programmer with over 4 years of experience working in video games.  
-                    I am most at home when I get to challenge myself to learn new things.
-                </p>
-
-                <h1><a name="work">Professional Work</a></h1>
-                <div class="pure-g">
-<div class="pure-u-1 pure-u-md-1-3">
-    <div class="card">
-        <img src="static/img/aquifer.jpg"/>
-        <div>
-            <h2>Aquifer (2022-)</h2>
-            <a href="https://www.aquifermotion.com/">https://www.aquifermotion.com/</a>
-            <p>
-                                        <ul>
-                                            <li>Live service 3D animation software product from Aquifer Inventions</li>
-                                            <li>Created an masked screen space outline system</li>
-                                            <li>Worked on a server side system for fulfilling orders that allowed for creating app readable files from form inputs</li>
-                                            <li>"Forked" <a href="https://github.com/Unity-Technologies/com.unity.demoteam.hair">Unity Demoteam Hair</a> and <a href="https://github.com/Unity-Technologies/com.unity.demoteam.digital-human">Demoteam Digital Human</a> packages to our internal bitbucket
-                                                <ul>
-                                                    <li>Created a URP hair shader that works with the Demoteam hair package</li>
-                                                    <li>Added an approximate transmission/rimlight effect to the hair shader that works with URP without path tracing</li>
-                                                    <li>Option to remove unnecessary physics for performance reasons</li>
-                                                    <li>Added build-time and realtime alpha sorting to the Demoteam Hair package</li>
-                                                </ul>
-                                            </li>
-                                            <li>Created a pose-based procedural animation system with blending, overshoot, step adjustment, and IK-based hand position adjustment</li>
-                                        </ul>
-            </p>
+        <div id="kingdomBoss" class="templink">
+            Kingdom Boss
         </div>
-    </div>
+        <div id="otherBossfight" class="templink">
+            Other Work At Bossfight
+        </div>
+        <div id="lucky" class="templink">
+            Lucky's Tale
+        </div>
+        <div id="hemut" class="templink">
+            Arté: Hemut
+        </div>
+        <div id="lumiere" class="templink">
+            Arté: Lumiere
+        </div>
+        <div id="mainScroller">
+        <div class="projectBgGradient" style="background-image: linear-gradient(180deg, #0e373d, #ebf9f7)">
+    <h2>Aquifer (Feb 2022 - Present)</h2>
+    <a href=https://www.aquifermotion.com/>https://www.aquifermotion.com/</a>
+    <p>
+        <ul>
+            <li>Live service 3D animation software product from Aquifer Inventions</li>
+            <li>Created an masked screen space outline system</li>
+            <li>Worked on a server side system for fulfilling orders that allowed for creating app readable files from form inputs</li>
+            <li>"Forked" <a href="https://github.com/Unity-Technologies/com.unity.demoteam.hair">Unity Demoteam Hair</a> and <a href="https://github.com/Unity-Technologies/com.unity.demoteam.digital-human">Demoteam Digital Human</a> packages to our internal bitbucket</li>
+            <li>Created a pose-based procedural animation system with blending, overshoot, step adjustment, and IK-based hand position adjustment</li>
+        </ul>
+    </p>
+    <img class="projectImage" src="/static/img/aquifer.jpg">
 </div>
-<div class="pure-u-1 pure-u-md-1-3">
-    <div class="card">
-        <img src="static/img/kingdom.jpg"/>
-        <div>
-            <h2>Kingdom Boss (2021)</h2>
-            <a href="https://x.com/kingdombossgame?lang&#x3D;en">https://x.com/kingdombossgame?lang&#x3D;en</a>
-            <p>
-                                        <ul>
-                                            <li>Soft-launched in 2021 by Bossfight Entertainment</li>
-                                            <li>Worked in a client-server architecture while ensuring sim data is the same on both</li>
-                                            <li>Worked on an component-based ability system
-                                                <ul>
-                                                    <li>Editor tool for automatically documenting components</li>
-                                                    <li>Editor tool for adding breakpoints during ability evaluation</li>
-                                                    <li>Editor tool for viewing and editing character stats at runtime</li>
-                                                    <li>Editor tool for adding, viewing, and deleting components</li>
-                                                    <li>Supported design team by adding more gameplay specific features and components to the system</li>
-                                                </ul>
-                                            </li>
-                                            <li>Worked on in-house scripting language features
-                                                <ul>
-                                                    <li>Added capability for reusable code via macros</li>
-                                                    <li>Added capability for changing large amounts of character stats via a compile time constant system, including error reporting on non-constant values</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-            </p>
-        </div>
-    </div>
+        <div class="projectBgGradient" style="background-image: linear-gradient(180deg, #dcf0e5, #7088aa)">
+    <h2>Kingdom Boss (Dec 2021 - Feb 2022)</h2>
+    <a href=https://x.com/kingdombossgame>https://x.com/kingdombossgame</a>
+    <p>
+        <ul>
+            <li>Soft-launched in 2021 by Bossfight Entertainment</li>
+            <li>Worked in a client-server architecture while ensuring sim data is the same on both</li>
+            <li>Worked on an component-based ability system</li>
+            <li>Worked on in-house scripting language features</li>
+        </ul>
+    </p>
+    <img class="projectImage" src="/static/img/kingdom.jpg">
 </div>
-<div class="pure-u-1 pure-u-md-1-3">
-    <div class="card">
-        <img src="static/img/bingo.jpg"/>
-        <div>
-            <h2>Other Work At Bossfight (2020-2021)</h2>
-            <a href="https://www.playstudios.com/myvegas-bingo/">https://www.playstudios.com/myvegas-bingo/</a>
-            <p>
-                                        <ul>
-                                            <li>Added scripting language features to MyVEGAS Bingo from Kingdom Boss</li>
-                                            <li>Worked on an unanounced project converting DirectX rendering code and shaders to Vulkan</li>
-                                            <li>Worked on an unanounced project in Unity</li>
-                                        </ul>
-            </p>
-        </div>
-    </div>
+        <div class="projectBgGradient" style="background-image: linear-gradient(180deg, #160c48, #170d49)">
+    <h2>Other Work At Bossfight (Feb 2020 - Feb 2022)</h2>
+    <a href=https://www.playstudios.com/myvegas-bingo/>https://www.playstudios.com/myvegas-bingo/</a>
+    <p>
+        <ul>
+            <li>Added scripting language features to MyVEGAS Bingo from Kingdom Boss</li>
+            <li>Worked on an unanounced project converting DirectX rendering code and shaders to Vulkan</li>
+            <li>Worked on an unanounced project in Unity</li>
+        </ul>
+    </p>
+    <img class="projectImage" src="/static/img/bingo.jpg">
 </div>
-<div class="pure-u-1 pure-u-md-1-3">
-    <div class="card">
-        <img src="static/img/lucky.jpg"/>
-        <div>
-            <h2>New Super Lucky&#x27;s Tale (2019)</h2>
-            <a href="https://playfulstudios.com/new-super-luckys-tale/">https://playfulstudios.com/new-super-luckys-tale/</a>
-            <p>
-                                        <ul>
-                                            <li>Worked in C++ on a Unity native plugin for platform specific functionality on Nintendo Switch</li>
-                                            <li>Implemented features and made fixes to ensure that the game would pass Nintendo's guidelines</li>
-                                            <li>Made optimizations for the game (orginally released on the Xbox One) to bring it up to 30 fps and under 3.2 GB memory usage</li>
-                                            <li>Created a tool to convert all world space speech bubbles into a new screen space dialogue system, avoiding weeks of data re-entry</li>
-                                        </ul>
-            </p>
-        </div>
-    </div>
+        <div class="projectBgGradient" style="background-image: linear-gradient(180deg, #e9bfe5, #ffffff)">
+    <h2>Lucky's Tale (Nov 2019)</h2>
+    <a href=https://playfulstudios.com/new-super-luckys-tale/>https://playfulstudios.com/new-super-luckys-tale/</a>
+    <p>
+        <ul>
+            <li>Worked in C++ on a Unity native plugin for platform specific functionality on Nintendo Switch</li>
+            <li>Implemented features and made fixes to ensure that the game would pass Nintendo's guidelines</li>
+            <li>Made optimizations for the game (orginally released on the Xbox One) to bring it up to 30 fps and under 3.2 GB memory usage</li>
+            <li>Created a tool to convert all world space speech bubbles into a new screen space dialogue system, avoiding weeks of data re-entry</li>
+        </ul>
+    </p>
+    <img class="projectImage" src="/static/img/lucky.jpg">
 </div>
-<div class="pure-u-1 pure-u-md-1-3">
-    <div class="card">
-        <img src="static/img/hemut.jpg"/>
-        <div>
-            <h2>Arté: Hemut (2018)</h2>
-            <a href="https://triseum.com/arte-hemut/">https://triseum.com/arte-hemut/</a>
-            <p>
-                                        <ul>
-                                            <li>Optimized serialized size and modified dialogue system from "Arté: Lumiere"</li>
-                                            <li>Added a global blackboard system that could be manipulated and read by the dialogue system for branching options</li>
-                                            <li>Worked on the "overworld" of the game where the player could collect an inventory of cards</li>
-                                        </ul>
-            </p>
-        </div>
-    </div>
+        <div class="projectBgGradient" style="background-image: linear-gradient(180deg, #19120c, #513b23)">
+    <h2>Arté: Hemut (Aug 2018)</h2>
+    <a href=https://triseum.com/arte-hemut/>https://triseum.com/arte-hemut/</a>
+    <p>
+        <ul>
+            <li>Optimized serialized size and modified dialogue system from "Arté: Lumiere"</li>
+            <li>Added a global blackboard system that could be manipulated and read by the dialogue system for branching options</li>
+            <li>Worked on the "overworld" of the game where the player could collect an inventory of cards</li>
+        </ul>
+    </p>
+    <img class="projectImage" src="/static/img/hemut.jpg">
 </div>
-<div class="pure-u-1 pure-u-md-1-3">
-    <div class="card">
-        <img src="static/img/lumiere.jpg"/>
-        <div>
-            <h2>Arté: Lumiere (2018)</h2>
-            <a href="https://triseum.com/arte-lumiere/">https://triseum.com/arte-lumiere/</a>
-            <p>
-                                        <ul>
-                                            <li>Created a node-based graphical dialogue editor that allowed for rapid implementation of dialogue trees
-                                                <ul>
-                                                    <li>Used reflection to populate fields in the Editor and to serialize the tree structure</li>
-                                                    <li>Adjacency list to store the tree</li>
-                                                    <li>Supported triggering actions from dialogue nodes</li>
-                                                </ul>
-                                            </li>
-                                            <li>Worked on a card-base minigame
-                                                <ul>
-                                                    <li>Rendering of flippable cards</li>
-                                                    <li>Scoring of cards</li>
-                                                    <li>Card snapping to zones</li>
-                                                </ul>
-                                            </li>
-                                            <li>Worked on a grid-based puzzle minigame
-                                                <ul>
-                                                    <li>Editor tool for quickly editing a grid of prefabs</li>
-                                                    <li>Implementation of A* pathfinding</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-            </p>
-        </div>
-    </div>
+        <div class="projectBgGradient" style="background-image: linear-gradient(180deg, #726c60, #545454)">
+    <h2>Arté: Lumiere (Aug 2018)</h2>
+    <a href=https://triseum.com/arte-lumiere/>https://triseum.com/arte-lumiere/</a>
+    <p>
+        <ul>
+            <li>Created a node-based graphical dialogue editor that allowed for rapid implementation of dialogue trees</li>
+            <li>Worked on a card-base minigame</li>
+            <li>Worked on a grid-based puzzle minigame</li>
+        </ul>
+    </p>
+    <img class="projectImage" src="/static/img/lumiere.jpg">
 </div>
-                </div>
-            </div>
         </div>
     </body>
 </html>

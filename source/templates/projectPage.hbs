@@ -1,0 +1,12 @@
+<div class="projectBgGradient" style="background-image: linear-gradient(180deg, {{{backgroundGradient.[0]}}}, {{{backgroundGradient.[1]}}})">
+    <h2>{{{name}}} {{{dateRange}}}</h2>
+    <a href={{{linkUrl}}}>{{{linkUrl}}}</a>
+    <p>
+        <ul>
+    {{#each points}}
+            <li>{{{this.text}}}</li>
+    {{/each}}
+        </ul>
+    </p>
+    <img class="projectImage" src="{{{coverImage}}}">
+</div>

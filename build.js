@@ -1,12 +1,11 @@
 const fs = require('fs');
 const Handlebars = require('handlebars');
+const sass = require('sass');
+const path = require('path');
 
-const indexTemplateFile = fs.readFileSync(__dirname + '/templates/index.hbs');
-var indexTemplate = Handlebars.compile(indexTemplateFile.toString());
-
-const partialsDir = __dirname + '/partials';
+// Collect all handlebars partials
+const partialsDir = __dirname + '/source/partials';
 var partialsFilenames = fs.readdirSync(partialsDir);
-
 partialsFilenames.forEach(function (filename) {
   var matches = /^([^.]+).hbs$/.exec(filename);
   if (!matches) {
@@ -17,4 +16,43 @@ partialsFilenames.forEach(function (filename) {
   Handlebars.registerPartial(name, template);
 });
 
-fs.writeFileSync(__dirname + '/index.html', indexTemplate({}));
+// Render templates for project description pages, save page relative urls for ajax loads
+const projectPageFile = fs.readFileSync(__dirname + '/source/templates/projectPage.hbs');
+var projectPageTemplate = Handlebars.compile(projectPageFile.toString());
+var projectPages = JSON.parse(fs.readFileSync(__dirname + '/source/projectPages/projects.json'));
+for (var page of projectPages)
+{
+  page.id = path.parse(page.hbsPath).name;
+  page.pageContents = fs.readFileSync(page.hbsPath).toString();
+  page.outputHtml = projectPageTemplate(page);
+}
+
+// Render template for index page
+const indexTemplateFile = fs.readFileSync(__dirname + '/source/templates/index.hbs');
+var indexTemplate = Handlebars.compile(indexTemplateFile.toString());
+var indexContext = {
+  projectPages: projectPages
+};
+fs.writeFileSync(__dirname + '/index.html', indexTemplate(indexContext));
+
+// Compile the sass file to css
+fs.writeFileSync(__dirname + '/static/css/app.css', sass.compile(__dirname + '/source/scss/app.scss').css);
+
+// Compile js files into one app.js
+var siteScript = "// Global site script\n";
+siteScript += fs.readFileSync(__dirname + '/source/js/global.js');
+
+// Add project page ajax load script
+siteScript += "// Project page ajax loads\n";
+const projectPageAjaxFile = fs.readFileSync(__dirname + '/source/js/projectPageNavigation.js');
+var projectPageAjaxTemplate = Handlebars.compile(projectPageAjaxFile.toString());
+for (var page of projectPages)
+{
+  var projectPageAjaxContext = {
+    page: page,
+  }
+  siteScript += projectPageAjaxTemplate(projectPageAjaxContext);
+}
+fs.writeFileSync(__dirname + '/static/js/app.js', siteScript);
+
+console.log("Successfully built site");
