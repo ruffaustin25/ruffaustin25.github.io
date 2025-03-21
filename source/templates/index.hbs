@@ -8,15 +8,27 @@
         <link rel="stylesheet" href="static/css/app.css">
     </head>
     <body>
+        <div id="navigation-bar">
 {{#each projectPages}}
-        <div id="{{{this.id}}}" class="templink">
-            {{{this.name}}}
-        </div>
+            <div id="{{{this.id}}}">
+                {{{this.name}}}
+            </div>
 {{/each}}
-        <div id="mainScroller">
+        </div>
+        <div class="navigation-padding"></div>
+        <div id="main-scroller">
 {{#each projectPages}}
         {{{this.outputHtml}}}
 {{/each}}
+        </div>
+        <div id="circle-scroll-mask">
+            <svg id="circle-backdrop" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(200,100) scale(2)">
+                    <path d="M 0 0 L -38.27 92.39 A 100 100 0 0 1 -92.39 38.28 Z" fill="#2ecc71"></path>
+                    <path d="M 0 0 L -92.39 38.28 A 100 100 0 0 1 -92.39 -38.27 Z" fill="#1abc9c"></path>
+                    <path d="M 0 0 L -92.39 -38.27 A 100 100 0 0 1 -38.28 -92.39 Z" fill="#3498db"></path>
+                </g>
+            </svg> 
         </div>
     </body>
 </html>

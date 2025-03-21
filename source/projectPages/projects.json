@@ -4,8 +4,8 @@
         "dateRange": "(Feb 2022 - Present)",
         "hbsPath": "./source/projectPages/aquifer.hbs",
         "linkUrl": "https://www.aquifermotion.com/",
-        "coverImage": "/static/img/aquifer.jpg",
-        "backgroundGradient": [
+        "coverImage": "/static/img/aquifer/cover.jpg",
+        "coverGradient": [
             "#0e373d",
             "#ebf9f7"
         ],
@@ -43,8 +43,8 @@
         "dateRange": "(Dec 2021 - Feb 2022)",
         "hbsPath": "./source/projectPages/kingdomBoss.hbs",
         "linkUrl": "https://x.com/kingdombossgame",
-        "coverImage": "/static/img/kingdom.jpg",
-        "backgroundGradient": [
+        "coverImage": "/static/img/kingdomBoss/cover.jpg",
+        "coverGradient": [
             "#dcf0e5",
             "#7088aa"
         ],
@@ -83,8 +83,8 @@
         "dateRange": "(Feb 2020 - Feb 2022)",
         "hbsPath": "./source/projectPages/otherBossfight.hbs",
         "linkUrl": "https://www.playstudios.com/myvegas-bingo/",
-        "coverImage": "/static/img/bingo.jpg",
-        "backgroundGradient": [
+        "coverImage": "/static/img/bossfight/cover.jpg",
+        "coverGradient": [
             "#160c48",
             "#170d49"
         ],
@@ -108,8 +108,8 @@
         "dateRange": "(Nov 2019)",
         "hbsPath": "./source/projectPages/lucky.hbs",
         "linkUrl": "https://playfulstudios.com/new-super-luckys-tale/",
-        "coverImage": "/static/img/lucky.jpg",
-        "backgroundGradient": [
+        "coverImage": "/static/img/lucky/cover.jpg",
+        "coverGradient": [
             "#e9bfe5",
             "#ffffff"
         ],
@@ -137,8 +137,8 @@
         "dateRange": "(Aug 2018)",
         "hbsPath": "./source/projectPages/hemut.hbs",
         "linkUrl": "https://triseum.com/arte-hemut/",
-        "coverImage": "/static/img/hemut.jpg",
-        "backgroundGradient": [
+        "coverImage": "/static/img/hemut/cover.jpg",
+        "coverGradient": [
             "#19120c",
             "#513b23"
         ],
@@ -162,8 +162,8 @@
         "dateRange": "(Aug 2018)",
         "hbsPath": "./source/projectPages/lumiere.hbs",
         "linkUrl": "https://triseum.com/arte-lumiere/",
-        "coverImage": "/static/img/lumiere.jpg",
-        "backgroundGradient": [
+        "coverImage": "/static/img/lumiere/cover.jpg",
+        "coverGradient": [
             "#726c60",
             "#545454"
         ],
