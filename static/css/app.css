@@ -47,8 +47,8 @@ body::-webkit-scrollbar {
   top: -50vh;
   height: 300vh;
   transform: translateY(-50vh);
-  -webkit-mask-image: radial-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 70%);
-  mask-image: radial-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 70%);
+  -webkit-mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%);
+  mask-image: radial-gradient(rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%);
   width: 100vw;
   left: 50vw;
   z-index: -1;
