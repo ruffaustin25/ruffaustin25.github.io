@@ -1,16 +1,21 @@
-<div class="project-edge-blur">
-    <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, {{{coverGradient.[0]}}}, {{{coverGradient.[1]}}})">
-        <div class="project-contents">
-            <h2>{{{name}}} {{{dateRange}}}</h2>
-            <a class="project-link" href={{{linkUrl}}}>{{{linkUrl}}}</a>
-            <p>
-                <ul>
-{{#each points}}
-                    <li class="project-point">{{{this.text}}}</li>
-{{/each}}
-                </ul>
-            </p>
+<div class="project-container">
+    <div class="project-edge-blur">
+        <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, {{{coverGradient.[0]}}}, {{{coverGradient.[1]}}})">
+            <img class="project-image" src="{{{coverImage}}}">
         </div>
-        <img class="project-image" src="{{{coverImage}}}">
+    </div>
+    <div class="project-contents">
+        <h2>{{{name}}} {{{dateRange}}}</h2>
+        <a class="project-link" href={{{linkUrl}}}>{{{linkUrl}}}</a>
+        <ul>
+{{#each points}}
+            <li class="project-point">{{{this.text}}}</li>
+            <ul>
+    {{#each this.subPoints}}
+                <li class="project-subpoint">{{{this}}}</li>
+    {{/each}}
+            </ul>
+{{/each}}
+        </ul>
     </div>
 </div>
