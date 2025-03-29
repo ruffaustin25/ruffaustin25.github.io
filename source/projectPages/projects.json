@@ -2,6 +2,7 @@
     {
         "name": "Aquifer",
         "dateRange": "(Feb 2022 - Present)",
+        "id": "aquifer",
         "hbsPath": "./source/projectPages/aquifer.hbs",
         "linkUrl": "https://www.aquifermotion.com/",
         "coverImage": "/static/img/aquifer/cover.jpg",
@@ -41,6 +42,7 @@
     {
         "name": "Kingdom Boss",
         "dateRange": "(Dec 2021 - Feb 2022)",
+        "id": "kingdomBoss",
         "hbsPath": "./source/projectPages/kingdomBoss.hbs",
         "linkUrl": "https://x.com/kingdombossgame",
         "coverImage": "/static/img/kingdomBoss/cover.jpg",
@@ -81,6 +83,7 @@
     {
         "name": "Other Work At Bossfight",
         "dateRange": "(Feb 2020 - Feb 2022)",
+        "id": "otherBossfight",
         "hbsPath": "./source/projectPages/otherBossfight.hbs",
         "linkUrl": "https://www.playstudios.com/myvegas-bingo/",
         "coverImage": "/static/img/bossfight/cover.jpg",
@@ -106,6 +109,7 @@
     {
         "name": "Lucky's Tale",
         "dateRange": "(Nov 2019)",
+        "id": "lucky",
         "hbsPath": "./source/projectPages/lucky.hbs",
         "linkUrl": "https://playfulstudios.com/new-super-luckys-tale/",
         "coverImage": "/static/img/lucky/cover.jpg",
@@ -135,6 +139,7 @@
     {
         "name": "Arté: Hemut",
         "dateRange": "(Aug 2018)",
+        "id": "hemut",
         "hbsPath": "./source/projectPages/hemut.hbs",
         "linkUrl": "https://triseum.com/arte-hemut/",
         "coverImage": "/static/img/hemut/cover.jpg",
@@ -160,6 +165,7 @@
     {
         "name": "Arté: Lumiere",
         "dateRange": "(Aug 2018)",
+        "id": "lumiere",
         "hbsPath": "./source/projectPages/lumiere.hbs",
         "linkUrl": "https://triseum.com/arte-lumiere/",
         "coverImage": "/static/img/lumiere/cover.jpg",

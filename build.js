@@ -22,7 +22,6 @@ var projectPageTemplate = Handlebars.compile(projectPageFile.toString());
 var projectPages = JSON.parse(fs.readFileSync(__dirname + '/source/projectPages/projects.json'));
 for (var page of projectPages)
 {
-  page.id = path.parse(page.hbsPath).name;
   page.pageContents = fs.readFileSync(page.hbsPath).toString();
   page.outputHtml = projectPageTemplate(page);
 }
@@ -39,20 +38,23 @@ fs.writeFileSync(__dirname + '/index.html', indexTemplate(indexContext));
 fs.writeFileSync(__dirname + '/static/css/app.css', sass.compile(__dirname + '/source/scss/app.scss').css);
 
 // Compile js files into one app.js
-var siteScript = "// Global site script\n";
+var siteScript = '// Projects json\n';
+siteScript += 'projectsJson = ' + fs.readFileSync(__dirname + '/source/projectPages/projects.json');
+
+siteScript += '\n\n// Global site script\n';
 siteScript += fs.readFileSync(__dirname + '/source/js/global.js');
 
 // Add project page ajax load script
-siteScript += "// Project page ajax loads\n";
-const projectPageAjaxFile = fs.readFileSync(__dirname + '/source/js/projectPageNavigation.js');
+siteScript += '\n\n// Project specific js\n';
+const projectPageAjaxFile = fs.readFileSync(__dirname + '/source/js/projectPages.js');
 var projectPageAjaxTemplate = Handlebars.compile(projectPageAjaxFile.toString());
 for (var page of projectPages)
 {
   var projectPageAjaxContext = {
     page: page,
   }
-  siteScript += projectPageAjaxTemplate(projectPageAjaxContext);
+  siteScript += projectPageAjaxTemplate(projectPageAjaxContext) + '\n';
 }
 fs.writeFileSync(__dirname + '/static/js/app.js', siteScript);
 
-console.log("Successfully built site");
+console.log('Successfully built site');

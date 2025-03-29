@@ -9,31 +9,34 @@
     </head>
     <body>
         <div id="navigation-bar">
-            <div id="aquifer">
+            <div id="aquifer_nav">
                 Aquifer
             </div>
-            <div id="kingdomBoss">
+            <div id="kingdomBoss_nav">
                 Kingdom Boss
             </div>
-            <div id="otherBossfight">
+            <div id="otherBossfight_nav">
                 Other Work At Bossfight
             </div>
-            <div id="lucky">
+            <div id="lucky_nav">
                 Lucky's Tale
             </div>
-            <div id="hemut">
+            <div id="hemut_nav">
                 Arté: Hemut
             </div>
-            <div id="lumiere">
+            <div id="lumiere_nav">
                 Arté: Lumiere
             </div>
         </div>
         <div class="navigation-padding"></div>
         <div id="main-scroller">
-        <div class="project-container">
+        <div class="project-container" id="aquifer">
     <div class="project-edge-blur">
         <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, #0e373d, #ebf9f7)">
-            <img class="project-image" src="/static/img/aquifer/cover.jpg">
+            <div class="project-carousel-container">
+                <img class="project-image" src="/static/img/aquifer/cover.jpg">
+                <img class="project-image-next" src="/static/img/aquifer/cover.jpg">
+            </div>
         </div>
     </div>
     <div class="project-contents">
@@ -41,14 +44,8 @@
         <a class="project-link" href=https://www.aquifermotion.com/>https://www.aquifermotion.com/</a>
         <ul>
             <li class="project-point">Live service 3D animation software product from Aquifer Inventions</li>
-            <ul>
-            </ul>
             <li class="project-point">Created an masked screen space outline system</li>
-            <ul>
-            </ul>
             <li class="project-point">Worked on a server side system for fulfilling orders that allowed for creating app readable files from form inputs</li>
-            <ul>
-            </ul>
             <li class="project-point">"Forked" <a href="https://github.com/Unity-Technologies/com.unity.demoteam.hair">Unity Demoteam Hair</a> and <a href="https://github.com/Unity-Technologies/com.unity.demoteam.digital-human">Demoteam Digital Human</a> packages to our internal bitbucket</li>
             <ul>
                 <li class="project-subpoint">Created a URP hair shader that works with the Demoteam hair package</li>
@@ -57,15 +54,16 @@
                 <li class="project-subpoint">Added build-time and realtime alpha sorting to the Demoteam Hair package</li>
             </ul>
             <li class="project-point">Created a pose-based procedural animation system with blending, overshoot, step adjustment, and IK-based hand position adjustment</li>
-            <ul>
-            </ul>
         </ul>
     </div>
 </div>
-        <div class="project-container">
+        <div class="project-container" id="kingdomBoss">
     <div class="project-edge-blur">
         <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, #dcf0e5, #7088aa)">
-            <img class="project-image" src="/static/img/kingdomBoss/cover.jpg">
+            <div class="project-carousel-container">
+                <img class="project-image" src="/static/img/kingdomBoss/cover.jpg">
+                <img class="project-image-next" src="/static/img/kingdomBoss/cover.jpg">
+            </div>
         </div>
     </div>
     <div class="project-contents">
@@ -73,11 +71,7 @@
         <a class="project-link" href=https://x.com/kingdombossgame>https://x.com/kingdombossgame</a>
         <ul>
             <li class="project-point">Soft-launched in 2021 by Bossfight Entertainment</li>
-            <ul>
-            </ul>
             <li class="project-point">Worked in a client-server architecture while ensuring sim data is the same on both</li>
-            <ul>
-            </ul>
             <li class="project-point">Worked on an component-based ability system</li>
             <ul>
                 <li class="project-subpoint">Editor tool for automatically documenting components</li>
@@ -94,10 +88,13 @@
         </ul>
     </div>
 </div>
-        <div class="project-container">
+        <div class="project-container" id="otherBossfight">
     <div class="project-edge-blur">
         <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, #160c48, #170d49)">
-            <img class="project-image" src="/static/img/bossfight/cover.jpg">
+            <div class="project-carousel-container">
+                <img class="project-image" src="/static/img/bossfight/cover.jpg">
+                <img class="project-image-next" src="/static/img/bossfight/cover.jpg">
+            </div>
         </div>
     </div>
     <div class="project-contents">
@@ -105,21 +102,18 @@
         <a class="project-link" href=https://www.playstudios.com/myvegas-bingo/>https://www.playstudios.com/myvegas-bingo/</a>
         <ul>
             <li class="project-point">Added scripting language features to MyVEGAS Bingo from Kingdom Boss</li>
-            <ul>
-            </ul>
             <li class="project-point">Worked on an unanounced project converting DirectX rendering code and shaders to Vulkan</li>
-            <ul>
-            </ul>
             <li class="project-point">Worked on an unanounced project in Unity</li>
-            <ul>
-            </ul>
         </ul>
     </div>
 </div>
-        <div class="project-container">
+        <div class="project-container" id="lucky">
     <div class="project-edge-blur">
         <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, #e9bfe5, #ffffff)">
-            <img class="project-image" src="/static/img/lucky/cover.jpg">
+            <div class="project-carousel-container">
+                <img class="project-image" src="/static/img/lucky/cover.jpg">
+                <img class="project-image-next" src="/static/img/lucky/cover.jpg">
+            </div>
         </div>
     </div>
     <div class="project-contents">
@@ -127,24 +121,19 @@
         <a class="project-link" href=https://playfulstudios.com/new-super-luckys-tale/>https://playfulstudios.com/new-super-luckys-tale/</a>
         <ul>
             <li class="project-point">Worked in C++ on a Unity native plugin for platform specific functionality on Nintendo Switch</li>
-            <ul>
-            </ul>
             <li class="project-point">Implemented features and made fixes to ensure that the game would pass Nintendo's guidelines</li>
-            <ul>
-            </ul>
             <li class="project-point">Made optimizations for the game (orginally released on the Xbox One) to bring it up to 30 fps and under 3.2 GB memory usage</li>
-            <ul>
-            </ul>
             <li class="project-point">Created a tool to convert all world space speech bubbles into a new screen space dialogue system, avoiding weeks of data re-entry</li>
-            <ul>
-            </ul>
         </ul>
     </div>
 </div>
-        <div class="project-container">
+        <div class="project-container" id="hemut">
     <div class="project-edge-blur">
         <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, #19120c, #513b23)">
-            <img class="project-image" src="/static/img/hemut/cover.jpg">
+            <div class="project-carousel-container">
+                <img class="project-image" src="/static/img/hemut/cover.jpg">
+                <img class="project-image-next" src="/static/img/hemut/cover.jpg">
+            </div>
         </div>
     </div>
     <div class="project-contents">
@@ -152,21 +141,18 @@
         <a class="project-link" href=https://triseum.com/arte-hemut/>https://triseum.com/arte-hemut/</a>
         <ul>
             <li class="project-point">Optimized serialized size and modified dialogue system from "Arté: Lumiere"</li>
-            <ul>
-            </ul>
             <li class="project-point">Added a global blackboard system that could be manipulated and read by the dialogue system for branching options</li>
-            <ul>
-            </ul>
             <li class="project-point">Worked on the "overworld" of the game where the player could collect an inventory of cards</li>
-            <ul>
-            </ul>
         </ul>
     </div>
 </div>
-        <div class="project-container">
+        <div class="project-container" id="lumiere">
     <div class="project-edge-blur">
         <div class="project-bg-gradient" style="background-image: linear-gradient(180deg, #726c60, #545454)">
-            <img class="project-image" src="/static/img/lumiere/cover.jpg">
+            <div class="project-carousel-container">
+                <img class="project-image" src="/static/img/lumiere/cover.jpg">
+                <img class="project-image-next" src="/static/img/lumiere/cover.jpg">
+            </div>
         </div>
     </div>
     <div class="project-contents">
