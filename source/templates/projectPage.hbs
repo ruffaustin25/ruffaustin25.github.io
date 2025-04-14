@@ -8,18 +8,19 @@
         </div>
     </div>
     <div class="project-contents">
-        <h2>{{{name}}} {{{dateRange}}}</h2>
+        <h2 style="color:{{{textSelectedColor}}}">{{{name}}} {{{dateRange}}}</h2>
         <a class="project-link" href={{{linkUrl}}}>{{{linkUrl}}}</a>
         <ul>
 {{#each points}}
-            <li class="project-point">{{{this.text}}}</li>
+            <li class="project-point" style="color:{{{../textNormalColor}}}">{{{this.text}}}
     {{#if this.subPoints}}
-            <ul>
+                <ul>
         {{#each this.subPoints}}
-                <li class="project-subpoint">{{{this}}}</li>
+                    <li class="project-subpoint">{{{this}}}</li>
         {{/each}}
-            </ul>
+                </ul>
     {{/if}}
+            </li>
 {{/each}}
         </ul>
     </div>

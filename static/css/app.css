@@ -15,10 +15,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+a {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 1vh rgba(255, 255, 255, 0.4);
+}
+
 #navigation-bar {
   position: fixed;
   z-index: 100;
-  background-color: #008000;
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   width: 100vw;
   padding: 1.25vh;
@@ -26,6 +31,8 @@ body::-webkit-scrollbar {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  -webkit-mask-image: linear-gradient(180deg, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(180deg, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
 }
 
 #navigation-bar * {
@@ -103,6 +110,7 @@ h2 {
 
 .project-point {
   font-size: 2vh;
+  cursor: pointer;
 }
 
 .project-subpoint {
@@ -114,8 +122,8 @@ h2 {
   aspect-ratio: 1;
   top: 0;
   left: 0;
-  -webkit-mask-image: linear-gradient(90deg, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(90deg, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(90deg, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(90deg, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
   position: relative;
 }
 
