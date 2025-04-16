@@ -22,7 +22,6 @@ var projectPageTemplate = Handlebars.compile(projectPageFile.toString());
 var projectPages = JSON.parse(fs.readFileSync(__dirname + '/source/projectPages/projects.json'));
 for (var page of projectPages)
 {
-  page.pageContents = fs.readFileSync(page.hbsPath).toString();
   page.outputHtml = projectPageTemplate(page);
 }
 
